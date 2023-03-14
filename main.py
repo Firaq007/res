@@ -17,7 +17,7 @@ openai.api_key = "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"
 
 @app.post("/files/")
 async def create_file(file: UploadFile = File(...)):
-    file_location = os.path.join(r"uploads\\",file.filename)
+    file_location = os.path.join(r"uploads",file.filename)
     with open(file_location, "wb+") as destination:
         for chunk in file.file:
             destination.write(chunk)

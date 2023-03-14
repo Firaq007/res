@@ -12,7 +12,7 @@ app = FastAPI()
 
 
 k="Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/"
-openai.api_key = "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"
+openai.api_key = "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"
 
 
 @app.post("/files/")
